@@ -154,5 +154,5 @@ iocage restart "${JAIL_NAME}"
 
 echo "---------------"
 echo "Installation complete."
-echo "Visit ${IP} to access your Tautulli web interface."
+echo "Visit http://${IP}:8181 to access your Tautulli web interface."
 echo "---------------"
