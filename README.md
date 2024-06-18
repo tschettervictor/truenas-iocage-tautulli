@@ -34,7 +34,6 @@ In addition, there are some other options which have sensible defaults, but can 
 * INTERFACE: The network interface to use for the jail.  Defaults to `vnet0`.
 * JAIL_INTERFACES: Defaults to `vnet0:bridge0`, but you can use this option to select a different network bridge if desired.  This is an advanced option; you're on your own here.
 * VNET: Whether to use the iocage virtual network stack.  Defaults to `on`.
-* CERT_EMAIL is the email address Let's Encrypt will use to notify you of certificate expiration, or for occasional other important matters.  This is optional.  If you **are** using Let's Encrypt, though, it should be set to a valid address for the system admin.
 
 ### Execution
 Once you've downloaded the script and prepared the configuration file, run this script (`script tautulli.log ./tautulli-jail.sh`).  The script will run for several minutes.  When it finishes, your jail will be created, Tautulli will be installed, and you can access it at your jail IP on port 8181.
