@@ -62,8 +62,8 @@ if [ -z "${DEFAULT_GW_IP}" ]; then
   exit 1
 fi
 if [ -z "${POOL_PATH}" ]; then
-  POOL_PATH="/mnt/$(iocage get -p)"
-  echo 'POOL_PATH defaulting to '$POOL_PATH
+  echo 'Configuration error: POOL_PATH must be set'
+  exit 1
 fi
 
 # If DATA_PATH wasn't set in tautulli-config, set it.
